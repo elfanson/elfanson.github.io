@@ -314,6 +314,8 @@ a:focus {
 
 .header .content-inner {
     padding: 100px 30px;
+
+    /* Anson 20250707 顯示.content-inner背景圖 */
     background: url(../img/profile.png) right bottom no-repeat;
     background-size: contain;
 }
@@ -479,6 +481,73 @@ a:focus {
 }
 
 .about .progress .progress-bar {
+    width: 1px;
+    background: #FF6F61;
+    border-radius: 0;
+    transition: 1s;
+}
+
+/**********************************/
+/*********** sk CSS ************/
+/**********************************/
+.sk {
+    position: relative;
+    padding: 60px 30px;
+    background: #ffffff;
+    border-bottom: 30px solid #F6D155;
+}
+
+
+.sk img {
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 767.98px) {
+    .sk img {
+        margin-bottom: 15px;
+    }
+}
+
+.sk .btn {
+    border-radius: 0;
+    color: #222222;
+    background: #FF6F61;
+    transition: all .3s;
+}
+
+.sk .btn:hover {
+    color: #FF6F61;
+    background: #222222;
+}
+
+.sk .skills {
+    padding-top: 15px;
+}
+
+.sk .skill-name {
+    margin-top: 15px;
+}
+
+.sk .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sk .skill-name p:last-child {
+    float: right;
+}
+
+.sk .progress {
+    height: 5px;
+    border: 1px solid #FF6F61;
+    border-radius: 0;
+    background: #ffffff;
+}
+
+.sk .progress .progress-bar {
     width: 1px;
     background: #FF6F61;
     border-radius: 0;
